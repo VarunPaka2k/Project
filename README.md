@@ -23,24 +23,35 @@ The project follows a **two-notebook pipeline**:
 ```
 telco-customer-churn/
 ├── data/
-│   ├── WA_Fn-UseC_-Telco-Customer-Churn.csv
-│   ├── Clean_Telco-Customer-Churn_data.csv
-│   ├── processed_Telco-Customer-Churn_data.csv
-│   └── TelcoChurn_Top25_XGB.csv
+│   ├── WA_Fn-UseC_-Telco-Customer-Churn.csv        # Original Kaggle dataset
+│   ├── Clean_Telco-Customer-Churn_data.csv         # Cleaned dataset after EDA
+│   ├── processed_Telco-Customer-Churn_data.csv     # Fully processed & encoded data
+│   └── TelcoChurn_Top25_XGB.csv                    # Top 25 features selected via XGBoost
+│
 ├── notebooks/
-│   ├── 01_EDA.ipynb
-│   └── churn_modeling_and_evaluation.ipynb
+│   ├── EDA.ipynb                                  # Exploratory Data Analysis
+│   └── churn_modeling_and_evaluation.ipynb        # Modeling, SMOTE, ensembles, evaluation
+│
 ├── models/
-│   ├── LogisticRegression_BestModel.sav
-│   ├── RandomForest_BestModel.sav
-│   ├── XGBoost_BestModel.sav
-│   └── BEST_Stacking_SMOTE.sav
+│   ├── LogisticRegression_BestModel.sav            # Best Logistic Regression (normal)
+│   ├── RandomForest_BestModel.sav                  # Best Random Forest (normal)
+│   ├── XGBoost_BestModel.sav                       # Best XGBoost (normal)
+│   ├── StackingEnsemble_BestModel.sav              # Stacking ensemble (normal)
+│   ├── LogisticRegression_SMOTE.sav                # Logistic Regression trained with SMOTE
+│   ├── RandomForest_SMOTE.sav                      # Random Forest trained with SMOTE
+│   ├── XGBoost_SMOTE.sav                           # XGBoost trained with SMOTE
+│   └── BEST_Stacking_SMOTE.sav                     # Final selected stacking model (SMOTE)
+│
 ├── images/
-│   ├── churn_distribution.jpg
-│   ├── top3_models_heatmap.jpg
-│   └── Heatmap_Comparison_SMOTE.jpg
-├── requirements.txt
-├── README.md
+│   ├── churn_distribution.jpg                     # Churn class distribution
+│   ├── Smote.jpg                                  # Class distribution after SMOTE
+│   ├── Xg.jpg                                     # XGBoost confusion matrix
+│   ├── Smote stacking.jpg                         # Confusion matrix for BEST stacking (SMOTE)
+│   ├── Heatmap Comparison - All SMOTE Models.jpg  # Heatmap of all SMOTE model performance
+│   └── top3_models_heatmap.jpg                    # Heatmap highlighting top 3 models
+│
+├── requirements.txt                               # Python dependencies
+└── README.md                                      # Project documentation
 ```
 
 ---
