@@ -72,7 +72,7 @@ telco-customer-churn/
 ## 📦 Dataset  
 
 - **Name:** Telco Customer Churn  
-- **Primary Source:** IBM Analytics Community (2019 update)  
+- **Primary Source:** IBM Analytics Community  
   https://community.ibm.com/community/user/businessanalytics/blogs/steven-macko/2019/07/11/telco-customer-churn-1113
 - **Accessed via:** Kaggle  
   https://www.kaggle.com/datasets/blastchar/telco-customer-churn
