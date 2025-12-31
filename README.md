@@ -69,12 +69,15 @@ telco-customer-churn/
 
 ---
 
-## 📦 Dataset
+## 📦 Dataset  
 
-* **Source:** Kaggle – Telco Customer Churn
-* **Link:** [https://www.kaggle.com/datasets/blastchar/telco-customer-churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
-* **Records:** ~7,000 customers
-* **Target Variable:** `Churn` (0 = No, 1 = Yes)
+- **Name:** Telco Customer Churn  
+- **Primary Source:** IBM Analytics Community (2019 update)  
+  https://community.ibm.com/community/user/businessanalytics/blogs/steven-macko/2019/07/11/telco-customer-churn-1113
+- **Accessed via:** Kaggle  
+  https://www.kaggle.com/datasets/blastchar/telco-customer-churn
+- **Records:** ~7,000 customers  
+- **Target Variable:** Churn (0 = No, 1 = Yes)
 
 ---
 
